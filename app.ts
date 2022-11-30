@@ -53,3 +53,27 @@
 const age: number|string=10;
 
 console.log(age);
+
+
+////////////////////////////interface
+interface Transection{
+    senderAdd: string|number;
+    recAdd: string|number;
+    amount: number;
+}
+
+interface Banckaccount{
+name:string;
+age:number;
+sex:string;
+transections:Transection[];
+}
+
+
+
+const deepGohilAccount: Banckaccount={
+name:"deep",
+age:15,
+sex:"male",
+transections:[{senderAdd:"123",recAdd:"456",amount:100},{senderAdd:"1230",recAdd:"4560",amount:150}]
+}
